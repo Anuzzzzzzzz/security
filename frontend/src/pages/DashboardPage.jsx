@@ -47,7 +47,7 @@ const DashboardPage = () => {
 						})}
 					</p>
 					<p className='text-gray-300'>
-						<span className='font-bold'>Last Login: </span>
+						<span className='font-bold'>Last login: </span>
 
 						{formatDate(user.lastLogin)}
 					</p>
