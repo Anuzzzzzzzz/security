@@ -1,0 +1,55 @@
+.payment-options {
+  .payment-section {
+    margin-bottom: 20px;
+    .payment-type {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      label {
+        font-weight: bold;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .credit-form {
+      .form-group {
+        margin-bottom: 15px;
+        label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+        input {
+          width: 100%;
+          padding: 8px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          font-size: 16px;
+        }
+      }
+
+      .form-group button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #28a745;
+        border: none;
+        color: white;
+        cursor: pointer;
+        &:disabled {
+          background-color: #ccc;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+
+.payment-section {
+  .form-group input {
+    margin-top: 5px;
+  }
+}

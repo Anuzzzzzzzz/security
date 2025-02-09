@@ -1,0 +1,135 @@
+.page {
+  height: auto; /* Make it more flexible */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 50px auto;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 20px 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    width: 500px;
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .input-space {
+      margin-bottom: 10px;
+      position: relative;
+
+      input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+        color: #333;
+        font-family: inherit;
+
+        &::placeholder {
+          color: #aaa;
+        }
+
+        &:focus {
+          outline: none;
+          border-color: #164e3e;
+        }
+      }
+
+      .icon {
+        position: absolute;
+        right: 15px;
+        bottom: 30px;
+      }
+    }
+
+    .button {
+      width: 40%;
+      padding: 12px;
+      margin: 0 auto;
+      display: block;
+      background-color: #164e3e;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      font-family: inherit;
+
+      &:hover {
+        background-color: #124034;
+      }
+    }
+
+    .show-password {
+      position: absolute;
+      border: none;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 60px;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    .password-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .password-strength-bar {
+      height: 5px;
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 3px;
+      background-color: #e0e0e0;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    /* Password strength levels */
+    .strength-0 {
+      background-color: #ff4d4d;
+    }
+
+    .strength-1 {
+      background-color: #ffb84d;
+    }
+
+    .strength-2 {
+      background-color: #ffcc00;
+    }
+
+    .strength-3 {
+      background-color: #66cc66;
+    }
+
+    .strength-4 {
+      background-color: #009933;
+    }
+  }
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .page {
+    margin: 20px auto;
+  }
+
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .button {
+    width: 60%;
+  }
+}

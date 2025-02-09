@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,  // Strict mode for TypeScript, adds types and checks.
+    "noUnusedLocals": true,  // Ensures unused variables don't exist in the codebase.
+    "noUnusedParameters": true,  // Ensures unused parameters are caught at compile time.
+    "noFallthroughCasesInSwitch": true,  // Avoids fallthrough in switch statements.
+    "noImplicitAny": true,  // Prevents implicit 'any' types.
+    "strictFunctionTypes": true,  // Prevents unintended function type errors.
+    "alwaysStrict": true,  // Ensures strict mode is always on.
+    "esModuleInterop": true  // Compatibility for importing CommonJS modules.
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

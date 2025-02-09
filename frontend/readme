@@ -1,0 +1,42 @@
+Tour and Travel MERN Stack Project
+A secure MERN Stack web application for managing tour bookings. Built with MongoDB, Express.js, React.js, Node.js, and TypeScript, providing users with an easy way to plan and book tours.
+
+Setup
+
+1. Clone the Repo
+   bash
+   Copy
+   Edit
+   git clone https://github.com/Anuzzzzzzzz/security/tree/final
+   cd tour-and-travel
+2. Frontend Setup
+   bash
+   Copy
+   Edit
+   cd client
+   npm install
+   npm run dev
+3. Backend Setup
+   bash
+   Copy
+   Edit
+   cd server
+   npm install
+   npm run dev
+4. Environment Variables
+   Create a .env file in the backend directory with:
+
+plaintext
+Copy
+Edit
+PORT=5000
+MONGO_URI=your-mongo-uri
+Security Features
+JWT Authentication for secure user sessions.
+bcryptjs for password hashing.
+Helmet.js to secure HTTP headers.
+CORS to restrict API access to trusted domains.
+Rate Limiting to prevent brute-force attacks.
+This README provides a brief overview and instructions to get the project up and running with security measures.
+
+Youtube link: https://youtu.be/TosihkLGDL4

@@ -1,0 +1,50 @@
+.about-us {
+  background: linear-gradient(145deg, #f9f7e6, #f3f8e6);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 900px;
+  font-family: "Roboto", sans-serif;
+
+  .about {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    color: #333;
+    
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #2a6e35;
+      font-weight: 600;
+    }
+
+    h5 {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      margin-bottom: 12px;
+      color: #2a6e35;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 15px;
+      opacity: 0.9;
+      color: #444;
+    }
+
+    /* Add hover effect for paragraphs */
+    p:hover {
+      color: #2a6e35;
+      cursor: pointer;
+    }
+
+    /* Add responsive design */
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  }
+}
