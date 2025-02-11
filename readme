@@ -1,42 +1,58 @@
-Tour and Travel MERN Stack Project
+# Tour and Travel MERN Stack Project
+
+:
+
+```sh
+
 A secure MERN Stack web application for managing tour bookings. Built with MongoDB, Express.js, React.js, Node.js, and TypeScript, providing users with an easy way to plan and book tours.
 
 Setup
 
 1. Clone the Repo
-   bash
-   Copy
-   Edit
-   git clone https://github.com/Anuzzzzzzzz/security/tree/final
-   cd tour-and-travel
+
+ https://github.com/Anuzzzzzzzz/security
+ - tree/final
+
+
 2. Frontend Setup
-   bash
-   Copy
-   Edit
-   cd client
+
    npm install
+
    npm run dev
+
 3. Backend Setup
-   bash
-   Copy
-   Edit
-   cd server
+
    npm install
+
    npm run dev
+
 4. Environment Variables
+
    Create a .env file in the backend directory with:
 
-plaintext
-Copy
-Edit
-PORT=5000
+
+PORT=:5001
 MONGO_URI=your-mongo-uri
+
+
 Security Features
-JWT Authentication for secure user sessions.
-bcryptjs for password hashing.
-Helmet.js to secure HTTP headers.
-CORS to restrict API access to trusted domains.
-Rate Limiting to prevent brute-force attacks.
-This README provides a brief overview and instructions to get the project up and running with security measures.
+
+JWT Authentication: Secure user sessions with tokens stored in HTTP-only cookies.
+Password Hashing: Used bcryptjs to hash passwords before storing them.
+Helmet.js: Added security headers like X-Content-Type-Options, Strict-Transport-Security, and X-XSS-Protection.
+CORS: Restricted API access to trusted domains to prevent unauthorized requests.
+Rate Limiting: Prevented brute-force attacks by limiting request rates.
+Input Validation: Used express-validator and DOMPurify for sanitizing and validating inputs (email, password).
+Session Management: Tokens automatically expire after 1 hour, and are cleared on logout.
+Error Handling: Masked errors in production to prevent exposing sensitive data.
+Secure Cookies: Configured cookies with httpOnly, secure, and sameSite flags for better security.
+Password Reset: Implemented token-based password reset with expiration.
+Protected Routes: Secured routes like /profile with PrivateRoute to ensure only authenticated users can access them.
+Content Security Policy (CSP): Allowed content only from trusted sources to prevent XSS attacks.
+Environment Variables: Kept sensitive data (API keys) secure by storing them in environment variables.
+Cross-Site Scripting (XSS) Protection: Used DOMPurify to sanitize user inputs.
+
+
 
 Youtube link: https://youtu.be/TosihkLGDL4
+```
